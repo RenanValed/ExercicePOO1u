@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=List_exercices3
+comment1.params=
+comment1.target=java.lang.String\ exercice3_1()
+comment10.params=data1\ data2
+comment10.target=java.lang.String\ exercice3_10(java.lang.String,\ java.lang.String)
+comment11.params=datas
+comment11.target=java.lang.String[]\ exercice3_11(java.lang.String[])
+comment12.params=data
+comment12.target=java.lang.String\ exercicio3_12(java.lang.String)
+comment2.params=args
+comment2.target=java.lang.String\ exercice3_2(java.lang.String)
+comment3.params=caminho
+comment3.target=java.lang.String[]\ exercice3_3(java.lang.String)
+comment4.params=caminho
+comment4.target=java.lang.String[]\ exercice3_4(java.lang.String)
+comment5.params=caminho\ nomeFile
+comment5.target=void\ exercice3_5(java.lang.String,\ java.lang.String)
+comment6.params=
+comment6.target=void\ exercice3_6()
+comment7.params=caminho
+comment7.target=void\ exercice3_7(java.lang.String)
+comment8.params=caminho
+comment8.target=void\ exercice3_8(java.lang.String)
+comment9.params=
+comment9.target=void\ exercice3_9()
+numComments=13
