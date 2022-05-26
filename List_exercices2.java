@@ -7,7 +7,129 @@
  */
 public class List_exercices2
 {
+public void exercice2_1()
+    {   String nome1 = new String("abcdef");
 
+        String nome2 = "ghijklm";
+
+        int tam,comparacao;
+
+        int n1=5,n2=9;
+        
+        tam = nome1.length();
+
+        comparacao = nome2.compareTo(nome1);
+
+        String copia = nome2.substring(3,nome2.length());
+
+        boolean b1 = nome1.equals("abcdeF");
+
+        boolean b2 = nome1.equalsIgnoreCase("GhijkLm");
+
+        String s1 = nome1 + nome2 + n1 + n2;
+    
+        String s2 = nome1 + nome2 + (n1 + n2);
+
+    }
+    
+    // Receber dois inteiros e retorná-los em ordem crescente
+    public int[] exercice2_2(int x, int y){
+        int[] resp = new int[2];
+        if( x > y){
+            return new int[]{y,x};
+        }
+        else{
+            return new int[]{x,y};
+        }
+            
+    }
+    
+    // Receber três números reais e retorná-los em ordem decrescente
+    public int[] exercice2_3(int x, int y, int z){
+        int[] resp = new int[3];
+        if(x > y && y > z){
+            return new int[]{x,y,z};
+        }
+        else if(x > y && y < z){
+            return new int[]{x,z,y};
+        }
+        else if(x < y && y < z){
+            return new int[]{z,y,x}; 
+        }
+        else if(y > x && x > z){
+            return new int[]{y,x,z};
+        }
+        else if(y > x && x < z){
+            return new int[]{y,z,x};
+        }  
+        else if(y < x && x < z){
+            return new int[]{z,x,y};
+        }
+        else if(z > x && x > y){
+            return new int[]{z,x,y};
+        }
+        else if(z > x && x < y){
+            return new int[]{z,y,x};
+        }
+        else if(z < x && x < y){
+            return new int[]{z,y,x};
+        }
+        else {
+            return new int[]{x,y,z};
+        }
+    }
+    
+    // Receber um número real e retornar sua raiz quadrada
+   public double exercice2_4(double x){
+    return Math.sqrt(x);
+    }
+    
+    // Receber dois Strings e informar se o primeiro String está contido no segundo (use o método indexOf)
+    public int exercice2_5(String a, String b){
+        int indice = a.indexOf(b);
+        return indice;
+    }
+    
+     //Receber dois Strings e retorná-los em ordem alfabética (use o método compareTo)
+    public String[] exercice(String a, String b){
+        int indice = a.compareToIgnoreCase(b);
+        if(indice > 0){
+           return new String[]{b,a};
+        }
+        return new String[]{a,b};
+    }
+ 
+    //Receber três Strings e retorná-los em ordem alfabética (use o método compareTo)
+    public String[] exercice2_7(String a, String b, String c){
+        if(a.compareTo(b)<0 & a.compareTo(c)<0){
+            if(b.compareTo(c)<0) return new String[]{a, b, c};
+            return new String[]{a, c, b};
+        }else if(b.compareTo(a)<0 & b.compareTo(c)<0){
+            if(a.compareTo(c)<0) return new String[]{b, a, c};
+            return new String[]{b, c, a};
+        }else if(c.compareTo(a)<0 & c.compareTo(b)<0){
+            if(a.compareTo(b)<0) return new String[]{c, a, b};
+            return new String[]{c, b, a};
+        }
+        return new String[]{a,b,c};
+    }
+    
+    public String inverter(String s){
+        return s.substring(s.indexOf(' ')+1, s.length()) + ", " + s.substring(0, s.indexOf(' '));
+    }
+    
+    // Receber um array de Strings na forma "nome sobrenome" e retornar um array na forma "sobrenome, nome" 
+    //(use os métodos indexOf e substring)
+    public String[] exercice2_8(String[] nomes)
+    {   
+        String[] sobrenomeNome = new String[nomes.length];
+        
+        for(int i=0; i<nomes.length; i++){
+            sobrenomeNome[i] = inverter(nomes[i]);
+        }
+        
+        return sobrenomeNome;
+    }
     public String[] exercice2_9(String[] array)
     {   for(int i=0;i < array.length; i++){
             array[i] = array[i].toUpperCase();
